@@ -1,0 +1,15 @@
+.contact {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    color: black;
+    /* background: rgba(192, 207, 194, 0.5); */
+    box-shadow: 10px 10px 5px rgba(53, 54, 53, 0.5);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Gudea', sans-serif;
+}

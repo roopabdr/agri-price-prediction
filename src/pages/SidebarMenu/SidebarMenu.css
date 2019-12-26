@@ -1,0 +1,7 @@
+.menu_item {
+    padding: 15px 0px 0px 0px;
+}
+
+.menu_item span {
+    cursor: pointer;
+}
