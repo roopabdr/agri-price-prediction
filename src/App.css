@@ -5,8 +5,8 @@ html, body {
   left:0%;
   top:0px; */
   /* background:#1E1E20 url("./img/agri-india.jpeg") center top no-repeat; */
-  background:#ffffff url("./img/agri-india-3.jpg") center top no-repeat;
-  background-size: cover;
+  background:#1d201d url("./img/agri-india-3.jpg") center top no-repeat;
+  background-size: cover;  
 }
 
 .App {
