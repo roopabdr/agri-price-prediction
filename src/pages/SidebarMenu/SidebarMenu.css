@@ -5,3 +5,7 @@
 .menu_item span {
     cursor: pointer;
 }
+
+.menu_item span:hover {
+    color: yellow;
+}

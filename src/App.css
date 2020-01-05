@@ -78,3 +78,39 @@ header {
   font-size: 1.4em;  
   color: #ffffff;
 }
+
+.commodity {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #ffffff;
+    background: rgba(16, 85, 23, 0.5);
+    /* box-shadow: 10px 10px 5px rgba(53, 54, 53, 0.8); */
+    /* box-shadow: 10px 10px 5px rgba(53, 54, 53, 0.8); */
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Gudea', sans-serif;
+}
+
+.commodity h2 {
+  text-align: center;
+}
+
+.commodity th {
+  font-weight: bolder;
+  color: yellow;
+  padding: 5px;
+  text-align: center;
+}
+
+.commodity tr {
+  box-shadow: 5px 10px 15px rgba(200, 216, 200, 0.1);
+}
+.commodity td {
+  padding: 8px;
+  text-align: center;
+}
