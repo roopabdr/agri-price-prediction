@@ -23,7 +23,7 @@ const AboutPublishedBooks = () => {
             <p>
             The price trend analysis during 1990s does indicate that the commodity available for immediate sale 
             will influence the price behaviour. In most cases, if the quantity produced is 5% in excess of the 
-            normal production, it will end up with more than 10% price depression. Similarly, in the event of 
+            normal production, it will end up with more than 10% price depreciation. Similarly, in the event of 
             achieving 5% increase in prices, the production should back up with 15% decrease to normal production. 
             Since INDIA is a member of WTO, as per GATT it has a great responsibility of looking into the product 
             specific subsidies, which are normally produced in the form of Minimum Support Price (MSP) to specific 
@@ -39,7 +39,7 @@ const AboutPublishedBooks = () => {
             <p>
             Introductory Chapter I covers the importance and need for the study, objectives, coverage hypotheses, 
             methodology and limitation of the study. Agricultural price policy in developing countries with special 
-            reference to India – an overview – has been presented in Chapter II. The modulus operandi of 
+            reference to India – an overview – has been presented in Chapter II. The modus operandi of 
             Agricultural price determination in India by Government of India has been elaborated in Chapter III. 
             Chapter IV presents Karnataka’s Agricultural Marketing problems, the MSP operation and related 
             marketing challenges. In Chapter V, special care has been taken to analyse the data using Computer 
