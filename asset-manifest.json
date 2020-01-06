@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/agri-price-prediction/static/css/main.029413ee.chunk.css",
-    "main.js": "/agri-price-prediction/static/js/main.7af1799e.chunk.js",
-    "main.js.map": "/agri-price-prediction/static/js/main.7af1799e.chunk.js.map",
+    "main.js": "/agri-price-prediction/static/js/main.1e04d69a.chunk.js",
+    "main.js.map": "/agri-price-prediction/static/js/main.1e04d69a.chunk.js.map",
     "runtime-main.js": "/agri-price-prediction/static/js/runtime-main.0481f5e3.js",
     "runtime-main.js.map": "/agri-price-prediction/static/js/runtime-main.0481f5e3.js.map",
     "static/js/2.c5e6ec9b.chunk.js": "/agri-price-prediction/static/js/2.c5e6ec9b.chunk.js",
     "static/js/2.c5e6ec9b.chunk.js.map": "/agri-price-prediction/static/js/2.c5e6ec9b.chunk.js.map",
     "index.html": "/agri-price-prediction/index.html",
-    "precache-manifest.938c2dbc942f5245fdacd2b7f81b9046.js": "/agri-price-prediction/precache-manifest.938c2dbc942f5245fdacd2b7f81b9046.js",
+    "precache-manifest.fea86cb3353fab9e90e5ed0a2fa095b4.js": "/agri-price-prediction/precache-manifest.fea86cb3353fab9e90e5ed0a2fa095b4.js",
     "service-worker.js": "/agri-price-prediction/service-worker.js",
     "static/css/main.029413ee.chunk.css.map": "/agri-price-prediction/static/css/main.029413ee.chunk.css.map",
     "static/js/2.c5e6ec9b.chunk.js.LICENSE": "/agri-price-prediction/static/js/2.c5e6ec9b.chunk.js.LICENSE",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.0481f5e3.js",
     "static/js/2.c5e6ec9b.chunk.js",
     "static/css/main.029413ee.chunk.css",
-    "static/js/main.7af1799e.chunk.js"
+    "static/js/main.1e04d69a.chunk.js"
   ]
 }

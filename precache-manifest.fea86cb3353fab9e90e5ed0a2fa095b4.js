@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65c8efa5868d0b0e2c48daaea9d22e88",
+    "revision": "69946e2907146e4a6bd102f9ea8c154b",
     "url": "/agri-price-prediction/index.html"
   },
   {
-    "revision": "e1bd0c7df6043ca25bde",
+    "revision": "758c66c15bebb921b6ff",
     "url": "/agri-price-prediction/static/css/main.029413ee.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agri-price-prediction/static/js/2.c5e6ec9b.chunk.js.LICENSE"
   },
   {
-    "revision": "e1bd0c7df6043ca25bde",
-    "url": "/agri-price-prediction/static/js/main.7af1799e.chunk.js"
+    "revision": "758c66c15bebb921b6ff",
+    "url": "/agri-price-prediction/static/js/main.1e04d69a.chunk.js"
   },
   {
     "revision": "d6db83dc596f9678f8cf",
