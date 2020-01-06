@@ -23,9 +23,6 @@ const App = () => {
     'commodity': null
   });
 
-  // let bajraData = [{ "Year : 2019 Month Week#": "JanWk1", "Predicted Price(INR)/Quintal": "1758", "Actual Price(INR)/Quintal": "1779", "Percentage Difference": "1.18%" }
-  //   , { "Year : 2019 Month Week#": "JanWk2", "Predicted Price(INR)/Quintal": "1758", "Actual Price(INR)/Quintal": "1835", "Percentage Difference": "4.20%" }];
-  // let bajraData = [{'one one': 1, 'two': 2}, {'one one': 3, 'two': 4}];
   let commodityData = null;
   
   const _loadclient = (collectionName) => {
