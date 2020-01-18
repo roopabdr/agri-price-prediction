@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/agri-price-prediction/static/css/main.029413ee.chunk.css",
-    "main.js": "/agri-price-prediction/static/js/main.1e04d69a.chunk.js",
-    "main.js.map": "/agri-price-prediction/static/js/main.1e04d69a.chunk.js.map",
+    "main.css": "/agri-price-prediction/static/css/main.a8485514.chunk.css",
+    "main.js": "/agri-price-prediction/static/js/main.03c8e114.chunk.js",
+    "main.js.map": "/agri-price-prediction/static/js/main.03c8e114.chunk.js.map",
     "runtime-main.js": "/agri-price-prediction/static/js/runtime-main.0481f5e3.js",
     "runtime-main.js.map": "/agri-price-prediction/static/js/runtime-main.0481f5e3.js.map",
-    "static/js/2.c5e6ec9b.chunk.js": "/agri-price-prediction/static/js/2.c5e6ec9b.chunk.js",
-    "static/js/2.c5e6ec9b.chunk.js.map": "/agri-price-prediction/static/js/2.c5e6ec9b.chunk.js.map",
+    "static/js/2.0a6e4053.chunk.js": "/agri-price-prediction/static/js/2.0a6e4053.chunk.js",
+    "static/js/2.0a6e4053.chunk.js.map": "/agri-price-prediction/static/js/2.0a6e4053.chunk.js.map",
     "index.html": "/agri-price-prediction/index.html",
-    "precache-manifest.fea86cb3353fab9e90e5ed0a2fa095b4.js": "/agri-price-prediction/precache-manifest.fea86cb3353fab9e90e5ed0a2fa095b4.js",
+    "precache-manifest.b9a3a2c1b93c9c60336f7b98f559abb7.js": "/agri-price-prediction/precache-manifest.b9a3a2c1b93c9c60336f7b98f559abb7.js",
     "service-worker.js": "/agri-price-prediction/service-worker.js",
-    "static/css/main.029413ee.chunk.css.map": "/agri-price-prediction/static/css/main.029413ee.chunk.css.map",
-    "static/js/2.c5e6ec9b.chunk.js.LICENSE": "/agri-price-prediction/static/js/2.c5e6ec9b.chunk.js.LICENSE",
+    "static/css/main.a8485514.chunk.css.map": "/agri-price-prediction/static/css/main.a8485514.chunk.css.map",
+    "static/js/2.0a6e4053.chunk.js.LICENSE": "/agri-price-prediction/static/js/2.0a6e4053.chunk.js.LICENSE",
     "static/media/App.css": "/agri-price-prediction/static/media/agri-india-3.6f5ae2b6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0481f5e3.js",
-    "static/js/2.c5e6ec9b.chunk.js",
-    "static/css/main.029413ee.chunk.css",
-    "static/js/main.1e04d69a.chunk.js"
+    "static/js/2.0a6e4053.chunk.js",
+    "static/css/main.a8485514.chunk.css",
+    "static/js/main.03c8e114.chunk.js"
   ]
 }
