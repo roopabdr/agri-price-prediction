@@ -37,15 +37,15 @@ const App = () => {
           setDisplayStyle({
             'displayStyle': 'published_menu'
           })
-          : (event.currentTarget.dataset.id === 'Bajra 2019' ?
+          : (event.currentTarget.dataset.id === 'Bajra' ?
             setDisplayStyle({
               'displayStyle': 'bajra_menu'
             })
-            : (event.currentTarget.dataset.id === 'Onion 2019' ?
+            : (event.currentTarget.dataset.id === 'Onion' ?
               setDisplayStyle({
                 'displayStyle': 'onion_menu'
               })
-              : (event.currentTarget.dataset.id === 'Potato 2019' ?
+              : (event.currentTarget.dataset.id === 'Potato' ?
                 setDisplayStyle({
                   'displayStyle': 'potato_menu'
                 })
@@ -58,16 +58,16 @@ const App = () => {
         )
       )
 
-    if (event.currentTarget.dataset.id === 'Bajra 2019') {
+    if (event.currentTarget.dataset.id === 'Bajra') {
       setCommodity({
         'commodity': Bajra
       });
       // console.log(Bajra);
-    } else if (event.currentTarget.dataset.id === 'Onion 2019') {
+    } else if (event.currentTarget.dataset.id === 'Onion') {
       setCommodity({
         'commodity': Onion
       });
-    } else if (event.currentTarget.dataset.id === 'Potato 2019') {
+    } else if (event.currentTarget.dataset.id === 'Potato') {
       setCommodity({
         'commodity': Potato
       });
