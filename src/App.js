@@ -6,12 +6,9 @@ import AboutAuthor from './pages/AboutAuthor/AboutAuthor';
 import AboutPublishedBooks from './pages/AboutPublishedBooks/AboutPublishedBooks';
 import Contact from './pages/Contact/Contact';
 import SidebarMenu from './pages/SidebarMenu/Sidebarmenu';
-
-import {
-  Stitch,
-  AnonymousCredential,
-  RemoteMongoClient
-} from "mongodb-stitch-browser-sdk";
+import { Bajra } from './pages/Data/Bajra';
+import { Onion } from './pages/Data/Onion';
+import { Potato } from './pages/Data/Potato';
 
 const App = () => {
 
@@ -22,46 +19,6 @@ const App = () => {
   const [commodity, setCommodity] = useState({
     'commodity': null
   });
-
-  let commodityData = null;
-  
-  const _loadclient = (collectionName) => {
-    // Initialize the App Client
-    let client = null;
-
-    // console.log(Stitch.hasAppClient("agri-stitch-srtgy"));
-    if (Stitch.hasAppClient("agri-stitch-srtgy") === false) {
-      client = Stitch.initializeDefaultAppClient("agri-stitch-srtgy");
-    } else {
-      client = Stitch.defaultAppClient;
-    }
-
-    const displayTable = () => {
-      // Get a MongoDB Service Client
-      // This is used for logging in and communicating with Stitch
-      const mongodb = client.getServiceClient(
-        RemoteMongoClient.factory,
-        "mongodb-atlas"
-      );
-      const db = mongodb.db("agricult");
-      db
-        .collection(collectionName)
-        .find({}, { limit: 1000 })
-        .asArray()
-        .then(data => {
-          commodityData = Object.assign(data);
-          console.log('commodityData', commodityData.length);
-          setCommodity({
-            'commodity': commodityData
-          })
-        })
-    }
-
-    client.auth
-      .loginWithCredential(new AnonymousCredential())
-      .then(displayTable)
-      .catch(console.error);
-  }
 
   const onMenuClick = (event) => {
     console.log("menu click", event.currentTarget.dataset.id);
@@ -83,37 +40,44 @@ const App = () => {
           : (event.currentTarget.dataset.id === 'Bajra 2019' ?
             setDisplayStyle({
               'displayStyle': 'bajra_menu'
-            }) 
-            : (event.currentTarget.dataset.id === 'Onion 2019' ?
-            setDisplayStyle({
-              'displayStyle': 'onion_menu'
-            }) 
-            : (event.currentTarget.dataset.id === 'Potato 2019' ?
-            setDisplayStyle({
-              'displayStyle': 'potato_menu'
-            }) 
-            : setDisplayStyle({
-              'displayStyle': 'contact_menu'
             })
-          )
-          )
+            : (event.currentTarget.dataset.id === 'Onion 2019' ?
+              setDisplayStyle({
+                'displayStyle': 'onion_menu'
+              })
+              : (event.currentTarget.dataset.id === 'Potato 2019' ?
+                setDisplayStyle({
+                  'displayStyle': 'potato_menu'
+                })
+                : setDisplayStyle({
+                  'displayStyle': 'contact_menu'
+                })
+              )
+            )
           )
         )
       )
 
-      if(event.currentTarget.dataset.id === 'Bajra 2019') {
-        _loadclient("bajra");
-      } else if (event.currentTarget.dataset.id === 'Onion 2019') {
-        _loadclient("onion");
-      } else if (event.currentTarget.dataset.id === 'Potato 2019') {
-        _loadclient("potato");
-      }
+    if (event.currentTarget.dataset.id === 'Bajra 2019') {
+      setCommodity({
+        'commodity': Bajra
+      });
+      // console.log(Bajra);
+    } else if (event.currentTarget.dataset.id === 'Onion 2019') {
+      setCommodity({
+        'commodity': Onion
+      });
+    } else if (event.currentTarget.dataset.id === 'Potato 2019') {
+      setCommodity({
+        'commodity': Potato
+      });
+    }
   }
 
   useEffect(() => {
     setDisplayStyle({
       'displayStyle': 'home_menu'
-    });    
+    });
   }, []);
 
   return (
@@ -140,37 +104,36 @@ const App = () => {
                   <AboutPublishedBooks /> :
                   displayStyle.displayStyle === 'contact_menu' ?
                     <Contact /> :
-                    displayStyle.displayStyle === 'bajra_menu' 
-                    || displayStyle.displayStyle === 'onion_menu' 
-                    || displayStyle.displayStyle === 'potato_menu' ?
+                    displayStyle.displayStyle === 'bajra_menu'
+                      || displayStyle.displayStyle === 'onion_menu'
+                      || displayStyle.displayStyle === 'potato_menu' ?
                       <div className="commodity">
-                        <h2>{displayStyle.displayStyle === 'bajra_menu' ? "Bajra 2019"
-                        : displayStyle.displayStyle === 'onion_menu' ? "Onion 2019"
-                        : displayStyle.displayStyle === 'potato_menu' ? "Potato 2019"
-                        : ""}</h2>
-                        <table>
-                          <thead>
-                            <tr>
-                              <th>Year : 2019 Month Week#</th>
-                              <th>Predicted Price(INR)/Quintal</th>
-                              <th>Actual Price(INR)/Quintal</th>
-                              <th>Percentage Difference</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {
+                        <h2>{displayStyle.displayStyle === 'bajra_menu' ? "Bajra"
+                          : displayStyle.displayStyle === 'onion_menu' ? "Onion"
+                            : displayStyle.displayStyle === 'potato_menu' ? "Potato"
+                              : ""}</h2>
+                        <div>
+                          <div className="grid-container-header">
+                            <div>Year : Month Week#</div>
+                            <div>Predicted Price(INR)/Quintal</div>
+                            <div>Actual Price(INR)/Quintal</div>
+                            <div>Percentage Difference</div>
+                            <div>Year</div>
+                          </div>
+                          {
                             commodity.commodity !== null ?
-                            commodity.commodity.map((item, index) => {
-                              return <tr key={'tr' + index}>
-                                <td>{item["Year : 2019 Month Week#"]}</td>
-                                <td>{item["Predicted Price(INR)/Quintal"]}</td>
-                                <td>{item["Actual Price(INR)/Quintal"]}</td>
-                                <td>{item["Percentage Difference"]}</td>
-                              </tr>
-                            }) 
-                            : console.log('commodityData otherwise', commodity.commodity)
-                            }</tbody>
-                        </table>
+                              commodity.commodity.map((item, index) => {
+                                return <div className="grid-container" key={'tr' + index}>
+                                  <div className="grid-item">{item["Year : Month Week#"]}</div>
+                                  <div className="grid-item">{item["Predicted Price(INR)/Quintal"]}</div>
+                                  <div className="grid-item">{item["Actual Price(INR)/Quintal"]}</div>
+                                  <div className="grid-item">{item["Percentage Difference"]}</div>
+                                  <div className="grid-item">{item["YEAR"]}</div>
+                                </div>
+                              })
+                              : console.log('commodityData otherwise', commodity.commodity)
+                          }
+                        </div>
                       </div> :
                       <Home />
             }
