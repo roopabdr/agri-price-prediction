@@ -137,6 +137,22 @@ header {
   color: yellow;
 }
 
+.grid-container-header input {
+  padding: 8px 10px 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid yellow;
+}
+
+.grid-container-header input:focus {
+  border: 3px solid red;
+}
+
+.grid-container-header input::placeholder{
+  color: black;
+  font-weight: bold;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;

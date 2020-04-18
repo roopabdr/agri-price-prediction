@@ -274,65 +274,9 @@ export const Onion = [
   },
   {
     "Year : Month Week#": "OctWk4",
-    "Predicted Price(INR)/Quintal": 2728,
-    "Actual Price(INR)/Quintal": 3040,
-    "Percentage Difference": "10.26%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk1",
-    "Predicted Price(INR)/Quintal": 3224,
-    "Actual Price(INR)/Quintal": 4000,
-    "Percentage Difference": "19.40%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk2",
-    "Predicted Price(INR)/Quintal": 3715,
-    "Actual Price(INR)/Quintal": 4000,
-    "Percentage Difference": "7.13%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk3",
-    "Predicted Price(INR)/Quintal": 3704,
-    "Actual Price(INR)/Quintal": 4000,
-    "Percentage Difference": "7.40%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk4",
-    "Predicted Price(INR)/Quintal": 5590,
-    "Actual Price(INR)/Quintal": 5826,
-    "Percentage Difference": "4.05%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk1",
-    "Predicted Price(INR)/Quintal": 6886,
-    "Actual Price(INR)/Quintal": 7007,
-    "Percentage Difference": "1.73%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk2",
-    "Predicted Price(INR)/Quintal": 6884,
-    "Actual Price(INR)/Quintal": 7007,
-    "Percentage Difference": "1.76%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk3",
-    "Predicted Price(INR)/Quintal": 8291,
-    "Actual Price(INR)/Quintal": 8063,
-    "Percentage Difference": "-2.83%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk4",
-    "Predicted Price(INR)/Quintal": 5850,
-    "Actual Price(INR)/Quintal": 5941,
-    "Percentage Difference": "1.53%",
+    "Predicted Price(INR)/Quintal": 2128,
+    "Actual Price(INR)/Quintal": "",
+    "Percentage Difference": "",
     "YEAR": 2019
   },
   {

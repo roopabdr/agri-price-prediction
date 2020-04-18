@@ -275,64 +275,8 @@ export const Potato = [
   {
     "Year : Month Week#": "OctWk4",
     "Predicted Price(INR)/Quintal": 1220,
-    "Actual Price(INR)/Quintal": 1300,
-    "Percentage Difference": "6.15%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk1",
-    "Predicted Price(INR)/Quintal": 1462,
-    "Actual Price(INR)/Quintal": 1550,
-    "Percentage Difference": "5.68%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk2",
-    "Predicted Price(INR)/Quintal": 1542,
-    "Actual Price(INR)/Quintal": 1515,
-    "Percentage Difference": "-1.78%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk3",
-    "Predicted Price(INR)/Quintal": 1495,
-    "Actual Price(INR)/Quintal": 1529,
-    "Percentage Difference": "2.22%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk4",
-    "Predicted Price(INR)/Quintal": 1575,
-    "Actual Price(INR)/Quintal": 1595,
-    "Percentage Difference": "1.25%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk1",
-    "Predicted Price(INR)/Quintal": 1581,
-    "Actual Price(INR)/Quintal": 1601,
-    "Percentage Difference": "1.25%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk2",
-    "Predicted Price(INR)/Quintal": 1613,
-    "Actual Price(INR)/Quintal": 1654,
-    "Percentage Difference": "2.48%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk3",
-    "Predicted Price(INR)/Quintal": 1592,
-    "Actual Price(INR)/Quintal": 1609,
-    "Percentage Difference": "1.06%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk4",
-    "Predicted Price(INR)/Quintal": 1797,
-    "Actual Price(INR)/Quintal": 1870,
-    "Percentage Difference": "3.90%",
+    "Actual Price(INR)/Quintal": "",
+    "Percentage Difference": "",
     "YEAR": 2019
   },
   {

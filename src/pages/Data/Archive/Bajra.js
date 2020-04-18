@@ -1,4 +1,11 @@
 export const Bajra = [
+  // {
+  //   "Year : Month Week#": "Year : Month Week#",
+  //   "Predicted Price(INR)/Quintal": "Predicted Price(INR)/Quintal",
+  //   "Actual Price(INR)/Quintal": "Actual Price(INR)/Quintal",
+  //   "Percentage Difference": "Percentage Difference",
+  //   "YEAR": "Year"
+  // },
   {
     "Year : Month Week#": "JanWk1",
     "Predicted Price(INR)/Quintal": 1758,
@@ -275,64 +282,8 @@ export const Bajra = [
   {
     "Year : Month Week#": "OctWk4",
     "Predicted Price(INR)/Quintal": 1990,
-    "Actual Price(INR)/Quintal": 1938,
-    "Percentage Difference": "-2.68%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk1",
-    "Predicted Price(INR)/Quintal": 1878,
-    "Actual Price(INR)/Quintal": 1800,
-    "Percentage Difference": "-4.33%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk2",
-    "Predicted Price(INR)/Quintal": 1882,
-    "Actual Price(INR)/Quintal": 1875,
-    "Percentage Difference": "-0.37%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk3",
-    "Predicted Price(INR)/Quintal": 1923,
-    "Actual Price(INR)/Quintal": 1986,
-    "Percentage Difference": "3.17%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "NovWk4",
-    "Predicted Price(INR)/Quintal": 1818,
-    "Actual Price(INR)/Quintal": 1800,
-    "Percentage Difference": "-1.00%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk1",
-    "Predicted Price(INR)/Quintal": 1832,
-    "Actual Price(INR)/Quintal": 1900,
-    "Percentage Difference": "3.58%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk2",
-    "Predicted Price(INR)/Quintal": 1835,
-    "Actual Price(INR)/Quintal": 1813,
-    "Percentage Difference": "-1.21%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk3",
-    "Predicted Price(INR)/Quintal": 1826,
-    "Actual Price(INR)/Quintal": 1803,
-    "Percentage Difference": "-1.28%",
-    "YEAR": 2019
-  },
-  {
-    "Year : Month Week#": "DecWk4",
-    "Predicted Price(INR)/Quintal": 1996,
-    "Actual Price(INR)/Quintal": 1981,
-    "Percentage Difference": "-0.76%",
+    "Actual Price(INR)/Quintal": "",
+    "Percentage Difference": "",
     "YEAR": 2019
   },
   {

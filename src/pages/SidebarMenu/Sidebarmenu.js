@@ -3,7 +3,7 @@ import './SidebarMenu.css';
 
 const SidebarMenu = (props) => {
     
-    let sidebar_menu_arr = ['Bajra', 'Onion', 'Potato']; 
+    let sidebar_menu_arr = ['Bajra', 'Blackgram', 'Copra', 'Greengram', 'Groundnut', 'Jowar', 'Maize', 'Onion', 'Paddy', 'Potato', 'Ragi', 'Sunflower', 'Tur']; 
 
     return (
         <div>
