@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/agri-price-prediction/precache-manifest.6e0792cdab90121e3924444643d7cbf2.js"
+  "/agri-price-prediction/precache-manifest.3cc9dff22677be20d90ec54883a06dc7.js"
 );
 
 self.addEventListener('message', (event) => {

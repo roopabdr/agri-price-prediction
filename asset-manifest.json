@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/agri-price-prediction/static/css/main.b836bca7.chunk.css",
-    "main.js": "/agri-price-prediction/static/js/main.7f810bd9.chunk.js",
-    "main.js.map": "/agri-price-prediction/static/js/main.7f810bd9.chunk.js.map",
+    "main.css": "/agri-price-prediction/static/css/main.e37c5546.chunk.css",
+    "main.js": "/agri-price-prediction/static/js/main.b2a41ddc.chunk.js",
+    "main.js.map": "/agri-price-prediction/static/js/main.b2a41ddc.chunk.js.map",
     "runtime-main.js": "/agri-price-prediction/static/js/runtime-main.0481f5e3.js",
     "runtime-main.js.map": "/agri-price-prediction/static/js/runtime-main.0481f5e3.js.map",
     "static/js/2.0a6e4053.chunk.js": "/agri-price-prediction/static/js/2.0a6e4053.chunk.js",
     "static/js/2.0a6e4053.chunk.js.map": "/agri-price-prediction/static/js/2.0a6e4053.chunk.js.map",
     "index.html": "/agri-price-prediction/index.html",
-    "precache-manifest.6e0792cdab90121e3924444643d7cbf2.js": "/agri-price-prediction/precache-manifest.6e0792cdab90121e3924444643d7cbf2.js",
+    "precache-manifest.3cc9dff22677be20d90ec54883a06dc7.js": "/agri-price-prediction/precache-manifest.3cc9dff22677be20d90ec54883a06dc7.js",
     "service-worker.js": "/agri-price-prediction/service-worker.js",
-    "static/css/main.b836bca7.chunk.css.map": "/agri-price-prediction/static/css/main.b836bca7.chunk.css.map",
+    "static/css/main.e37c5546.chunk.css.map": "/agri-price-prediction/static/css/main.e37c5546.chunk.css.map",
     "static/js/2.0a6e4053.chunk.js.LICENSE": "/agri-price-prediction/static/js/2.0a6e4053.chunk.js.LICENSE",
     "static/media/App.css": "/agri-price-prediction/static/media/agri-india-3.6f5ae2b6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0481f5e3.js",
     "static/js/2.0a6e4053.chunk.js",
-    "static/css/main.b836bca7.chunk.css",
-    "static/js/main.7f810bd9.chunk.js"
+    "static/css/main.e37c5546.chunk.css",
+    "static/js/main.b2a41ddc.chunk.js"
   ]
 }
