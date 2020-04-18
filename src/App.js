@@ -30,16 +30,16 @@ const App = () => {
     'commodity': null
   });
 
-  // const [yearValue, setYearValue] = useState({
-  //   'yearValue': ''
-  // });
-
-  // const [monthValue, setMonthValue] = useState({
-  //   'monthValue': ''
-  // });
+  const [yearValue, setYearValue] = useState({
+    'yearValue': ''
+  });
 
   const onMenuClick = (event) => {
-    console.log("menu click", event.currentTarget.dataset.id);
+    // console.log("menu click", event.currentTarget.dataset.id);
+
+    setYearValue({
+      'yearValue': ''
+    });
 
     event.currentTarget.dataset.id === 'home_menu' ?
       setDisplayStyle({
@@ -182,59 +182,96 @@ const App = () => {
   }
 
 
-  // let filteredCommodity = null;
+  let filteredCommodity = null;
+  let initCommodity = null;
 
   const onInputChange = (event) => {
     // console.log("input datset id", event.currentTarget.dataset.id);
     // console.log("input change", event.target.value);
 
-    // function reducer(state, action) {
-    //   switch )
-    // }
+    setYearValue({
+      'yearValue': event.target.value
+    });
 
-    // if (event.currentTarget.dataset.id === "year") {
-    //   setYearValue({
-    //     'yearValue': event.target.value.toString()
-    //   });
-    // } else if (event.currentTarget.dataset.id === "month") {
-    //   setMonthValue({
-    //     'monthValue': event.target.value.toString()
-    //   });
-    // }
+    initCommodity = displayStyle.displayStyle === "bajra_menu"
+      ? Bajra
+      : (
+        displayStyle.displayStyle === "onion_menu"
+          ? Onion
+          : (
+            displayStyle.displayStyle === "potato_menu"
+              ? Potato
+              : (
+                displayStyle.displayStyle === "blackgram_menu"
+                  ? Blackgram
+                  : (
+                    displayStyle.displayStyle === "copra_menu"
+                      ? Copra
+                      : (
+                        displayStyle.displayStyle === "greengram_menu"
+                          ? Greengram
+                          : (
+                            displayStyle.displayStyle === "groundnut_menu"
+                              ? Groundnut
+                              : (
+                                displayStyle.displayStyle === "jowar_menu"
+                                  ? Jowar
+                                  : (
+                                    displayStyle.displayStyle === "maize_menu"
+                                      ? Maize
+                                      : (
+                                        displayStyle.displayStyle === "paddy_menu"
+                                          ? Paddy
+                                          : (
+                                            displayStyle.displayStyle === "ragi_menu"
+                                              ? Ragi
+                                              : (
+                                                displayStyle.displayStyle === "sunflower_menu"
+                                                  ? Sunflower
+                                                  : (
+                                                    displayStyle.displayStyle === "Tur_menu"
+                                                      ? Tur
+                                                      : null
+                                                  )
+                                              )
+                                          )
+                                      )
+                                  )
+                              )
+                          )
+                      )
+                  )
+              )
+          )
+      );
 
-    // if (yearValue.yearValue === "" && monthValue.monthValue === "") {
-    //   filteredCommodity = displayStyle.displayStyle === "bajra_menu"
-    //     ? Bajra
-    //     : (
-    //       displayStyle.displayStyle === "onion_menu"
-    //         ? Onion
-    //         : (
-    //           displayStyle.displayStyle === "potato_menu"
-    //             ? Potato
-    //             : null
-    //         )
-    //     )
-    // } else {
-    //   filteredCommodity = Object.assign(commodity.commodity);
-    // }
+    filteredCommodity = initCommodity;
 
-    // filteredCommodity = event.currentTarget.dataset.id === "year" || yearValue.yearValue !== ""
-    //   ?
-    //   filteredCommodity.filter(comm => {
-    //     return comm["YEAR"].toString().includes(yearValue.yearValue)
-    //   })
-    //   :
-    //   (
-    //     event.currentTarget.dataset.id === "month" || monthValue.monthValue !== ""
-    //       ? filteredCommodity.filter(comm => {
-    //         return comm["Year : Month Week#"].toString().includes(monthValue.monthValue)
-    //       })
-    //       : null
-    //   );
+    filteredCommodity = event.currentTarget.dataset.id === "year"
+      ?
+      filteredCommodity.filter(comm => {
+        if (comm !== null) {
+          return comm["YEAR"].toString().includes(event.target.value);
+        } else {
+          return initCommodity;
+        }
+      })
+      :
+      (
+        event.currentTarget.dataset.id === "month"
+          ? filteredCommodity.filter(comm => {
+            if (comm !== null) {
+              return comm["Year : Month Week#"].toString().includes(event.target.value);
+            } else {
+              return initCommodity;
+            }
+          })
+          : initCommodity
+      );
 
-    // setCommodity({
-    //   'commodity': filteredCommodity
-    // });
+    setCommodity({
+      'commodity': filteredCommodity
+    });
   }
 
   useEffect(() => {
@@ -302,7 +339,7 @@ const App = () => {
                             <div>Predicted Price(INR)/Quintal</div>
                             <div>Actual Price(INR)/Quintal</div>
                             <div>Percentage Difference</div>
-                            <div><input type="text" placeholder="Year" data-id="year" onChange={onInputChange} /></div>
+                            <div><input type="text" placeholder="Year" data-id="year" onChange={onInputChange}  value={yearValue.yearValue}/></div>
                           </div>
                           {
                             commodity.commodity !== null ?

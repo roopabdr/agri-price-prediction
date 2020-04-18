@@ -1,11 +1,14 @@
 .menu_item {
-    padding: 15px 0px 0px 0px;
+    padding: 15px 5px 0px 5px;
+    background-color: rgba(211, 211, 211, 0.5);
 }
 
 .menu_item span {
     cursor: pointer;
+    color: black;
 }
 
 .menu_item span:hover {
-    color: yellow;
+    color: darkgreen;
+    font-weight: bold;
 }

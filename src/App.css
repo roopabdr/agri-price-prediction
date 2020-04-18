@@ -126,7 +126,11 @@ header {
 .commodity {
   color: #ffffff;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600;  
+}
+
+.commodity h2 {
+  color: yellow;
 }
 
 .grid-container-header {
@@ -134,7 +138,8 @@ header {
   grid-template-columns: 20% 20% 20% 20% 20%;
   padding: 10px;
   font-weight: bolder;
-  color: yellow;
+  color: yellowgreen;
+  background-color: rgba(94, 86, 86, 0.5);
 }
 
 .grid-container-header input {
@@ -158,6 +163,11 @@ header {
   grid-template-columns: 20% 20% 20% 20% 20%;
   padding: 10px;
   color: #ffffff;
+}
+
+.grid-container:hover {
+  background-color: rgba(225, 255, 0, 0.8);
+  color: black;
 }
 
 .grid-item {
